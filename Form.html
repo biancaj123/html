@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<h3>Form</h3>
+	<form action="login.html" method="GET" >
+	<form method="GET" action="student.php" target="_blank">
+
+		<fieldset>
+    <legend>Details</legend>
+
+		<div>
+		<!-- Text Input -->
+		<label for="name">Name:</label>
+ 		<input type="text" id="name" name="nname" placeholder="enter your name" required maxlength="25"><br><br>
+
+ 		<label for="Email">Email-Id:</label>
+ 		<input type="text" id="Email" name="Email" value="test@example.com" required autofocus><br><br>
+
+ 		<!--password-->
+ 		<label for="password">Password:</label>
+  		<input type="password" id="pwd" name="pwd" maxlength="6" required><br><br>
+  		</div>
+
+ 	    <!-- datalist-->
+		<label for="Category">Category:</label>
+		<input list="Category" name="Category" id="Category" value="Freelancer">
+		<datalist id="Categories">
+  		<option value= "Student">
+  		<option value="Employeet">
+  		<option value="Freelancer">
+  		</datalist><br><br>
+
+
+ 	    <!--Date-->
+ 	    <label>Event Date:</label>
+    	<input type="date" name="Startdate" required><br><br>
+
+    	<!-- Radio Buttons -->
+ 	    <label for="Tickets">Tickets:</label>
+ 	    <input type = "radio" name = "ticket" value = "Ticket1">Ticket1
+        <input type = "radio" name = "ticket" value = "Ticket2" checked>Ticket2 <!-- deault is given by 'checked' attr-->
+        <input type = "radio" name = "ticket" value = "Ticket3">Ticket3<br><br>
+
+        <!--Checkbox-->
+ 	    <label>Payment:</label>
+ 	    <input type="checkbox" name="pay" value="ol-pay" required> Online Payment <br><br>
+
+ 	    <!--Text area-->
+ 	    <label for="Notes">Notes:</label>
+ 	    <textarea rows="5" cols="20" name="Notes" placeholder="write notes"></textarea><br><br>
+
+ 	    <!--Submit Button-->
+ 	    <input type="Submit" value="Submit">
+ 	    <input type="Reset" value="Reset">
+
+ 	    	</fieldset>
+    
+ 	</form>
+ </body>
+ </html>
+
+	
